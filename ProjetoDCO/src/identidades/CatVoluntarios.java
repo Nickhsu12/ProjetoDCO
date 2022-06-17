@@ -3,10 +3,10 @@ package identidades;
 import java.util.ArrayList;
 import java.util.List;
 
-public class catVoluntarios {
+public class CatVoluntarios {
 	private List<Voluntario> listaVoluntarios;
 
-	public catVoluntarios() {
+	public CatVoluntarios() {
 		this.listaVoluntarios = new ArrayList<>();
 	}
 
@@ -23,5 +23,14 @@ public class catVoluntarios {
 		Voluntario toAdd = new Voluntario(i);
 		listaVoluntarios.add(toAdd);
 
+	}
+
+	public Voluntario getVoluntario(int i) {
+		for (Voluntario v : this.listaVoluntarios) {
+			if (v.getContacto() == i) {
+				return v;
+			}
+		}
+		return null;
 	}
 }

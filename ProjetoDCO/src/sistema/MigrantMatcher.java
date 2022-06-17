@@ -1,20 +1,21 @@
 package sistema;
 
-import identidades.catVoluntarios;
+import Handlers.IdentificarHandler;
+import identidades.Ajuda;
+import identidades.CatAjudas;
+import identidades.CatVoluntarios;
 
 public class MigrantMatcher {
-	private catVoluntarios catVoluntarios;
+	private CatVoluntarios catVoluntarios;
+	private CatAjudas catAjudas;
 
-	public MigrantMatcher() {
-		this.catVoluntarios = new catVoluntarios();
+	public IdentificarHandler getIdentificarHandler() {
+		return new IdentificarHandler(catVoluntarios);
 	}
 
-	public void identCont(int i) {
-		while (!catVoluntarios.exists(i)) {
-			System.out.println("Não existe esse voluntario no nosso sistema");
-		}
-		System.out.println("Entrou com sucesso!");
-
+	public MigrantMatcher() {
+		this.catVoluntarios = new CatVoluntarios();
+		this.catAjudas = new CatAjudas();
 	}
 
 	public void addVoluntario(int i) {
@@ -23,5 +24,9 @@ public class MigrantMatcher {
 			return;
 		}
 		catVoluntarios.put(i);
+	}
+
+	public void addAjuda(Ajuda a) {
+		catAjudas.addAjuda(a);
 	}
 }
