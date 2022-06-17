@@ -11,4 +11,4 @@ public abstract class Ajuda {
 		this.id = id;
 	}
 
-}
+ }
