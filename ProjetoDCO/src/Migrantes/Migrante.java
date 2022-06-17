@@ -13,4 +13,12 @@ public class Migrante {
 		this.name = name;
 		this.numero = numero;
 	}
+	
+	public String toString() {
+		if ( numero == 0 ) {
+			return ( name + "\n");
+		} else {
+			return ("Nome: " + name + "\n" + "Número: " + numero + "\n");
+		}
+	}
 }

@@ -2,8 +2,11 @@ package catalogos;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import Handlers.FamiliaHandler;
 import Migrantes.Familia;
-import Migrantes.FamiliaHandler;
 import Migrantes.Migrante;
 
 public class catalogoMigrantes {
@@ -23,5 +26,13 @@ public class catalogoMigrantes {
 	
 	public void addFamilia( Migrante migrante, Familia familia) {
 		listaMigrantes.put(migrante, familia);
+	}
+	
+	public String toString() {
+		StringBuilder sb = new StringBuilder("");
+		for( Map.Entry<Migrante, Familia> migrante : listaMigrantes.entrySet()) {
+			sb.append(migrante.getKey().toString() + migrante.getValue().toString() + "\n");
+		}
+		return sb.toString();
 	}
 }
