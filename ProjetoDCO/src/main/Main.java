@@ -3,6 +3,8 @@ package main;
 import java.util.Random;
 import java.util.Scanner;
 
+import com.pidgeonsmssender.sdk.PidgeonSMSSender;
+
 import Handlers.AjudaHandler;
 import Handlers.AlojamentoHandler;
 import Handlers.IdentificarHandler;
@@ -14,6 +16,8 @@ import sistema.MigrantMatcher;
 
 public class Main {
 	public static void main(String[] args) {
+		PidgeonSMSSender a = new PidgeonSMSSender();
+		a.send("918629958", "oi");
 		Scanner scan = new Scanner(System.in);
 		MigrantMatcher mm = new MigrantMatcher();
 		IdentificarHandler identificarHandler = mm.getIdentificarHandler();
