@@ -1,6 +1,6 @@
 package Handlers;
 
-import identidades.CatVoluntarios;
+import catalogos.CatVoluntarios;
 import identidades.Voluntario;
 
 public class IdentificarHandler {

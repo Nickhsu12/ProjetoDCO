@@ -1,7 +1,9 @@
-package identidades;
+package catalogos;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import identidades.Ajuda;
 
 public class CatAjudas {
 	private List<Ajuda> catAjudas;

@@ -1,7 +1,9 @@
-package identidades;
+package catalogos;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import identidades.Voluntario;
 
 public class CatVoluntarios {
 	private List<Voluntario> listaVoluntarios;

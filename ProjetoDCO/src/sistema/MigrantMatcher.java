@@ -1,9 +1,9 @@
 package sistema;
 
 import Handlers.IdentificarHandler;
+import catalogos.CatAjudas;
+import catalogos.CatVoluntarios;
 import identidades.Ajuda;
-import identidades.CatAjudas;
-import identidades.CatVoluntarios;
 
 public class MigrantMatcher {
 	private CatVoluntarios catVoluntarios;
