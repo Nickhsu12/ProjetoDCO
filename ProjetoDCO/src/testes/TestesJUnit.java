@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import Handlers.AjudaHandler;
 import Handlers.ItemHandler;
 import identidades.Item;
-import main.Main;
 import sistema.MigrantMatcher;
 
 class TestesJUnit {
@@ -28,7 +27,6 @@ class TestesJUnit {
 		MigrantMatcher mm = new MigrantMatcher();
 		itemHandler.indicaItem(desc);
 		AjudaHandler ajudaHandler = itemHandler;
-		Main.verificarCodigo("912345678", ajudaHandler, mm);
 		assertEquals(true, ajudaHandler.getAjuda().getId());
 	}
 
