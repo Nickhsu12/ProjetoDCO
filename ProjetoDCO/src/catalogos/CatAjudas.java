@@ -16,4 +16,8 @@ public class CatAjudas {
 		catAjudas.add(a);
 	}
 
+	public Boolean exists(int id) {
+		return null;
+	}
+
 }

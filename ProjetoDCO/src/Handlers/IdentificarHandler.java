@@ -9,10 +9,10 @@ public class IdentificarHandler {
 
 	public IdentificarHandler(CatVoluntarios catVoluntarios) {
 		this.catVoluntarios = catVoluntarios;
-		catVoluntarios.put(918629958);
+		catVoluntarios.put("918629958");
 	}
 
-	public Voluntario identCont(int i) {
+	public Voluntario identCont(String i) {
 		if (!catVoluntarios.exists(i)) {
 			System.out.println("Não existe esse voluntario no nosso sistema");
 			System.exit(0);

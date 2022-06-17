@@ -1,13 +1,13 @@
 package identidades;
 
 public class Voluntario {
-	private int contactoTelefonico;
+	private String contactoTelefonico;
 
-	public Voluntario(int contacto) {
+	public Voluntario(String contacto) {
 		this.contactoTelefonico = contacto;
 	}
 
-	public int getContacto() {
+	public String getContacto() {
 		return this.contactoTelefonico;
 	}
 

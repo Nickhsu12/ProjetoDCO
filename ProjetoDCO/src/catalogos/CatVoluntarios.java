@@ -12,24 +12,24 @@ public class CatVoluntarios {
 		this.listaVoluntarios = new ArrayList<>();
 	}
 
-	public Boolean exists(int i) {
+	public Boolean exists(String num) {
 		for (Voluntario v : this.listaVoluntarios) {
-			if (v.getContacto() == i) {
+			if (v.getContacto().equals(num)) {
 				return true;
 			}
 		}
 		return false;
 	}
 
-	public void put(int i) {
-		Voluntario toAdd = new Voluntario(i);
+	public void put(String num) {
+		Voluntario toAdd = new Voluntario(num);
 		listaVoluntarios.add(toAdd);
 
 	}
 
-	public Voluntario getVoluntario(int i) {
+	public Voluntario getVoluntario(String num) {
 		for (Voluntario v : this.listaVoluntarios) {
-			if (v.getContacto() == i) {
+			if (v.getContacto().equals(num)) {
 				return v;
 			}
 		}
