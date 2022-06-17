@@ -6,7 +6,11 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="C:/Users/gfgvl/Desktop/smsproviders.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+=======
+	<classpathentry kind="lib" path="C:/Users/danyl/Downloads/smsproviders.jar"/>
+>>>>>>> branch 'main' of https://github.com/Nickhsu12/ProjetoDCO.git
 	<classpathentry kind="output" path="bin"/>
 </classpath>

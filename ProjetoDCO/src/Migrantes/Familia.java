@@ -17,4 +17,13 @@ public class Familia {
 		listaMigrantes.add(new Migrante(nome));
 	}
 	
+	public String toString() {
+		StringBuilder s = new StringBuilder("");
+		s.append("Número de membros : " + numeroMigrantes + "\n" );
+		s.append("Lista de membros: \n");
+		for ( Migrante membros : listaMigrantes) {
+			s.append(membros.toString());
+		}
+		return s.toString();
+	}
 }
